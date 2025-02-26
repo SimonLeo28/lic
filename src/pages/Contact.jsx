@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export default function Contact() {
+
+  const backendUrl = import.meta.env.BACKEND_URL;
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -15,7 +17,7 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:3000/submit-form", {
+    const response = await fetch(`${backendUrl}/submit-form`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
