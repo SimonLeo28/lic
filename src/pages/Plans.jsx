@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 export default function Plans() {
   return (
@@ -77,12 +78,12 @@ export default function Plans() {
               Need help choosing the right plan? Our LIC agents are here to assist you.
             </p>
             <div className="mt-6">
-              <a
-                href="/Contact"
+              <Link
+                to="/Contact"
                 className="bg-indigo-700 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-indigo-800 transition"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>
