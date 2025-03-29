@@ -1,7 +1,7 @@
 import React from 'react'
 import hero from '../images/darkenedhero.jpg'
 import aboutimg from '../images/about.jpg'
-import Navbar from '../components/Navbar'
+import Navbar1 from '../components/Navbar'
 
 export const Edit = () => {
   return (
@@ -34,7 +34,7 @@ export const Edit = () => {
                 <li className='text-lg text-white font-bold'>Contact</li>
             </ul>
         </div>  */}
-        <Navbar />
+        <Navbar1 />
             <div className='flex p-5 flex-col gap-3 justify-center items-center h-screen'>
             <h1 className=' lg:text-5xl text-white flex justify-center items-center md:p-4 text-3xl items-center justify-center'>WELCOME TO JEEVAN SHANTHI</h1>
             <p className='text-1xl text-white flex justify-center items-center'>Protecting your future, securing your peace of mind.</p>
