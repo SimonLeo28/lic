@@ -6,9 +6,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-indigo-800 bg-opacity-90 text-white p-4 shadow-lg z-50">
+    <nav className="fixed top-0 left-0 w-full bg-transparent bg-opacity-90 text-white p-4 shadow-lg z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Jeevan Saathi</h1>
+        <h1 className="text-2xl font-bold">Jeevan Shanthi</h1>
         
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6">
@@ -26,7 +26,7 @@ const Navbar = () => {
       
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <ul className="md:hidden flex flex-col gap-4 p-4 bg-indigo-800 text-center">
+        <ul className="md:hidden flex flex-col gap-4 p-4 bg-transparent text-center">
           <li><Link to="/" className="hover:text-yellow-400" onClick={() => setIsOpen(false)}>Home</Link></li>
           <li><Link to="/Plans" className="hover:text-yellow-400" onClick={() => setIsOpen(false)}>Plans</Link></li>
           <li><Link to="/About" className="hover:text-yellow-400" onClick={() => setIsOpen(false)}>About</Link></li>

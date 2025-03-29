@@ -9,7 +9,7 @@ export default function Footer() {
             <div>
               <h2 className="text-xl font-semibold">About Us</h2>
               <p className="mt-2 text-gray-200 text-sm">
-                We provide trusted life insurance solutions to secure your future and your loved ones.
+                We provide trusted life insurance solutions to secure your future and your <Link to={"/test"}> loved ones.</Link>
               </p>
             </div>
   
