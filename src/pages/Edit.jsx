@@ -1,7 +1,7 @@
 import React from 'react'
 import hero from '../images/darkenedhero.jpg'
 import aboutimg from '../images/about.jpg'
-import Navbar1 from '../components/Navbar'
+import Navbar1 from '../components/Navbar1'
 
 export const Edit = () => {
   return (
