@@ -72,10 +72,10 @@ const Navbar = () => {
         <div className="md:hidden mt-4 bg-white">
           <ul className="flex flex-col items-center gap-4 py-4">
             <li><Link to="/" className="text-gray-600 hover:text-blue-600 font-medium" onClick={() => setIsOpen(false)}>Home</Link></li>
-            <li><Link to="/plans" className="text-gray-600 hover:text-blue-600 font-medium" onClick={() => setIsOpen(false)}>Plans</Link></li>
-            <li><Link to="/about" className="text-gray-600 hover:text-blue-600 font-medium" onClick={() => setIsOpen(false)}>About</Link></li>
+            <li><Link to="/Plans" className="text-gray-600 hover:text-blue-600 font-medium" onClick={() => setIsOpen(false)}>Plans</Link></li>
+            <li><Link to="/About" className="text-gray-600 hover:text-blue-600 font-medium" onClick={() => setIsOpen(false)}>About</Link></li>
             <li>
-              <Link to="/contact" className="bg-blue-600 text-white px-6 py-2 font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300" onClick={() => setIsOpen(false)}>
+              <Link to="/Contact" className="bg-blue-600 text-white px-6 py-2 font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300" onClick={() => setIsOpen(false)}>
                 Contact Us
               </Link>
             </li>
