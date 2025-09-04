@@ -7,7 +7,6 @@ import App from './App.jsx'
 import About from './pages/About.jsx';
 import Plans from './pages/Plans.jsx';
 import Contact from './pages/Contact.jsx';
-import Login from './pages/Login.jsx';
 import { Edit } from './pages/Edit.jsx';
 
 const router = createBrowserRouter([
@@ -26,10 +25,6 @@ const router = createBrowserRouter([
   {
     path: "/Contact",
     element: <Contact />,
-  },
-  {
-    path: "/login",
-    element: <Login />,
   },
   {
     path: "/test",

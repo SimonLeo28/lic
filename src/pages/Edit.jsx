@@ -4,6 +4,29 @@ import aboutimg from '../images/about.jpg'
 import Navbar1 from '../components/Navbar1'
 
 export const Edit = () => {
+
+  const Plans = [
+    {
+        title: "Endowment Plans",
+        description: "Endowment plans offer a combination of savings and protection.",
+    },
+    {
+        title: "Money Back Plans",
+        description: "Provides periodic payments while ensuring life cover.",
+    },
+    {
+        title: "Term Assurance Plans",
+        description: "High coverage at affordable premiums.",
+    },
+    {
+        title: "Pension Plans",
+        description: "Ensuring a secure post-retirement life.",
+    },
+    {
+        title: "ULIPs",
+        description: "Combining investment with life cover.",
+    },
+  ]
   return (
     <>
     <div
@@ -47,18 +70,30 @@ export const Edit = () => {
 
         {/* About Section */}
         <div className='lg:flex w-screen flex-col gap-10 p-10 justify-center items-center'>
-            <h1 className='text-3xl '>ABOUT INSURANCE IN BANGLORE</h1>
+            <h1 className='text-3xl'>ABOUT INSURANCE IN BANGLORE</h1>
             <div className='lg:flex gap-10 justify-center items-center md:flex-col'>
                 <img src={aboutimg} className='lg:w-[25%] md:w-[25%]' />
-                <div className='flex flex-col justify-center items-center gap-10'>
+                <div className='flex flex-col justify-center items-center gap-5'>
                     <h1 className='text-3xl'>Our Mission</h1>
-                    <p className='flex justify-center items-center'>At insuranceinbangalore, our mission is to provide comprehensive insurance<br />
+                    <p className='text-justify flex justify-center items-center'>At Jeevan Saathi, our mission is to provide comprehensive insurance<br />
                     solutions tailored to your needs. We believe in empowering our clients with<br />
                     the knowledge and resources necessary to make informed decisions about their<br />
                     insurance coverage.
                     </p>
                 </div>
             </div>
+        </div>
+
+        {/** Plans Part */}
+        <div className='grid lg:grid-cols-3 justify-center items-center gap-5 md:grid-cols-2'>
+            {Plans.map((plan,index) => (
+                <div
+                className='p-5 bg-white border-3 h-fit w-fit rounded-sm bg-black flex-col justify-center items-center border-gray-600'                
+                key={index}>
+                    <h1>{plan.title}</h1>
+                    <h3>{plan.description}</h3>
+                </div>
+            ))}
         </div>
     </div>
     </>
