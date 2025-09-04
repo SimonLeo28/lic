@@ -12,7 +12,7 @@ const ValuesIcon = () => (
 );
 
 
-export default function About() {
+export const About = () => {
   return (
     <>
       <Navbar />

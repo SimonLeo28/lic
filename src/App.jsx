@@ -1,4 +1,4 @@
-import Hero from "./pages/Hero"
+import { Hero } from "./pages/Hero"
 import Footer from "./components/Footer"
 
 export default function App() {

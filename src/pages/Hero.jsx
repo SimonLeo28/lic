@@ -22,7 +22,7 @@ const HeroIllustration = () => (
 );
 
 
-export default function Hero() {
+export const Hero = () => {
   return (
     <>
       <Navbar />
