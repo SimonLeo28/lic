@@ -3,7 +3,7 @@ import hero from '../images/darkenedhero.jpg'
 import aboutimg from '../images/about.jpg'
 import Navbar1 from '../components/Navbar1'
 
-export const Edit = () => {
+const Edit = () => {
 
   const Plans = [
     {
@@ -99,3 +99,5 @@ export const Edit = () => {
     </>
   )
 }
+
+export default Edit;
