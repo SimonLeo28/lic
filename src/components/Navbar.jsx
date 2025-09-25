@@ -53,12 +53,14 @@ const Navbar = () => {
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-6">
-          <Link to="/" className="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300">Home</Link>
-          <Link to="/Plans" className="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300">Plans</Link>
-          <Link to="/About" className="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300">About</Link>
-          <Link to="/Contact" className="bg-blue-600 text-white px-4 py-2 text-sm font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300">
-            Contact Us
-          </Link>
+          <li><Link to="/" className="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300">Home</Link></li>
+          <li><Link to="/Plans" className="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300">Plans</Link></li>
+          <li><Link to="/About" className="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300">About</Link></li>
+          <li>
+            <Link to="/Contact" className="bg-blue-600 text-white px-4 py-2 text-sm font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300">
+              Contact Us
+            </Link>
+          </li>
         </div>
         
         {/* Mobile Menu Button */}
