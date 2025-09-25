@@ -35,7 +35,7 @@ const PlanCard = ({ icon, title, description, plans }) => (
 );
 
 
-export const Plans = () => {
+const Plans = () => {
   const planData = [
     {
       icon: <EndowmentIcon />,
@@ -104,3 +104,4 @@ export const Plans = () => {
   );
 }
 
+export default Plans;

@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-export const Contact = () => {
+const Contact = () => {
 
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
   const [formData, setFormData] = useState({
@@ -82,3 +82,5 @@ export const Contact = () => {
     </>
   );
 }
+
+export default Contact;

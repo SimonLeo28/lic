@@ -12,7 +12,7 @@ const ValuesIcon = () => (
 );
 
 
-export const About = () => {
+const About = () => {
   return (
     <>
       <Navbar />
@@ -98,3 +98,5 @@ export const About = () => {
     </>
   );
 }
+
+export default About;
